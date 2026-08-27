@@ -1,0 +1,2 @@
+-keep public class dev.oxqux.snake.MainActivity { *; }
+-keep public class dev.oxqux.snake.GameView { *; }

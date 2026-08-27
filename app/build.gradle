@@ -1,0 +1,29 @@
+plugins { id "com.android.application" }
+
+android {
+    namespace "dev.oxqux.snake"
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "dev.oxqux.snake"
+        minSdk 21
+        targetSdk 29
+        versionCode 3
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    lint { abortOnError false }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    packaging { resources { excludes += ["kotlin/**", "META-INF/**"] } }
+}
+
+dependencies {}

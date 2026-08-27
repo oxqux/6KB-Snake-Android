@@ -1,0 +1,23 @@
+# Build output
+build/
+.gradle/
+local.properties
+
+# IDE
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.project
+.classpath
+.settings/
+
+# Signing key — DO NOT COMMIT (contains your private key)
+snake.keystore
+*.keystore
+
+# Project instructions / meta
+AGENTS.md
+
+# Release APKs are build artifacts
+*.apk
